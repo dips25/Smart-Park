@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyPark" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+<!--        <item name="android:fontFamily">@font/regular</item>-->
+
+        <item name="android:statusBarColor">@android:color/holo_red_dark</item>
+        <item name="colorPrimary">@android:color/holo_red_dark</item>
+
+        <item name="floatingActionButtonStyle">@style/FloatingActionButtonStyle</item>
+    </style>
+
+    <style name="FloatingActionButtonStyle">
+        <item name="android:backgroundTint">@android:color/holo_red_dark</item>
+
+    </style>
+
+    <style name="textStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="Theme.MyPark" parent="Base.Theme.MyPark" />
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ParkMapsActivity" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/button_root">
+
+        <include layout="@layout/buttons_visible"/>
+
+        <!--        <FrameLayout-->
+        <!--            android:layout_width="48dp"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:id="@+id/mylocation">-->
+
+        <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:backgroundTint="@color/white"-->
+        <!--                app:fabSize="normal"-->
+
+
+        <!--                />-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="24dp"-->
+        <!--                android:layout_height="24dp"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:elevation="10dp"-->
+        <!--                android:background="@drawable/mylocation"/>-->
+        <!--        </FrameLayout>-->
+
+        <!--    <FrameLayout-->
+        <!--        android:layout_width="48dp"-->
+        <!--        android:layout_height="48dp"-->
+        <!--        android:layout_below="@id/mylocation"-->
+        <!--        android:layout_marginTop="20dp"-->
+        <!--        android:id="@+id/opennav">-->
+
+        <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            app:fabSize="normal"-->
+
+        <!--            />-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="24dp"-->
+        <!--            android:layout_height="24dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:elevation="10dp"-->
+        <!--            android:background="@drawable/directions"/>-->
+        <!--    </FrameLayout>-->
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/locationpointer"/>
+
+</RelativeLayout>

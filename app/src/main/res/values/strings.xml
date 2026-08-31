@@ -1,0 +1,29 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">My Park</string>
+    <string name="home">Home\n</string>
+    <string name="parks">Parks</string>
+    <string name="profile">Profile</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="name">Name</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="address">Address</string>
+    <string name="close">Close</string>
+    <string name="my_park">My Parks</string>
+    <string name="title_activity_park_maps">ParkMapsActivity</string>
+    <string name="sort"><b><font size="20">Sort</font></b></string>
+    <string name="clear">Clear</string>
+    <string name="contact">Contact</string>
+    <string name="delete">Delete</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="proceed">Proceed</string>
+    <string name="u2022_read_sms">• READ_SMS</string>
+    <string name="u2022_read_phonenumber">• READ_PHONENUMBER</string>
+    <string name="u2022_access_coarse_location">• COARSE_LOCATION</string>
+    <string name="u2022_access_fine_location">• FINE_LOCATION</string>
+    <string name="logout">Logout</string>
+    <string name="u2022_read_external_storage">• READ_EXTERNAL_STORAGE</string>
+    <string name="u2022_write_external_storage">• WRITE_EXTERNAL_STORAGE</string>
+    <string name="no_records">No Records</string>
+</resources>

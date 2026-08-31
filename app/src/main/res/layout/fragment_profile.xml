@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/profile_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_red_dark"
+        android:id="@+id/profile_toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:text="@string/profile"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/menuicon"
+            android:id="@+id/menu_icon"/>
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/profile_toolbar">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="100dp">
+
+        <include layout="@layout/layout_profile_header"/>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="250dp"-->
+<!--            android:id="@+id/image_parent">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:background="@drawable/car"-->
+<!--                android:id="@+id/backgroundImage"/>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/diagonalcut"/>-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="120dp"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    app:cardCornerRadius="230dp">-->
+
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="@mipmap/ic_launcher"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:scaleType="centerCrop"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/profile_image"/>&ndash;&gt;-->
+<!--                </de.hdodenhof.circleimageview.CircleImageView>-->
+
+<!--        </RelativeLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Personal Information"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardCornerRadius="20dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_icon_container"
+                        android:src="@drawable/ic_user"
+                        android:padding="5dp"
+                        android:id="@+id/name_img"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/name_img"
+                        android:layout_alignTop="@id/name_img"
+                        android:layout_marginStart="8dp"
+                        android:text="Full Name"
+                        android:id="@+id/name_header"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name_header"
+                        android:layout_alignStart="@id/name_header"
+                        android:text="Dipanjan Biswas"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/edt_name"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#E5E7EB"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_icon_container"
+                        android:src="@drawable/ic_phone"
+                        android:padding="5dp"
+                        android:id="@+id/ph_no_img"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ph_no_img"
+                        android:layout_alignTop="@id/ph_no_img"
+                        android:layout_marginStart="8dp"
+                        android:text="Phone Number"
+                        android:id="@+id/ph_no_header"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ph_no_header"
+                        android:layout_alignStart="@id/ph_no_header"
+                        android:text="8777368493"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/edt_contact"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#E5E7EB"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_icon_container"
+                        android:src="@drawable/ic_location"
+                        android:padding="5dp"
+                        android:id="@+id/address_img"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/address_img"
+                        android:layout_alignTop="@id/address_img"
+                        android:layout_marginStart="8dp"
+                        android:text="Address"
+                        android:id="@+id/address_header"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address_header"
+                        android:layout_alignStart="@id/address_header"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/edt_address"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:boxBackgroundMode="filled"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            app:hintTextColor="@android:color/holo_red_dark"-->
+<!--            android:backgroundTint="@color/black"-->
+<!--            android:hint="@string/name">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableStart="@drawable/name"-->
+<!--                android:drawablePadding="3dp"-->
+<!--                android:id="@+id/edt_name"/>-->
+
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:boxBackgroundMode="filled"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+
+<!--            app:hintTextColor="@android:color/holo_red_dark"-->
+<!--            android:hint="@string/contact">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="phone"-->
+<!--                android:drawableStart="@drawable/contact"-->
+<!--                android:drawablePadding="3dp"-->
+<!--                android:editable="false"-->
+<!--                android:cursorVisible="false"-->
+<!--                android:id="@+id/edt_contact"/>-->
+
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:boxBackgroundMode="filled"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            app:hintTextColor="@android:color/holo_red_dark"-->
+<!--            android:hint="@string/address">-->
+
+<!--            <com.vehicles.parking.mypark.Utils.MyTextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableLeft="@drawable/locationright"-->
+<!--                android:textSize="16dp"-->
+<!--                android:drawableRight="@drawable/mylocation"-->
+<!--                android:id="@+id/edt_address"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:text="Save"
+            android:id="@+id/btn_save"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
